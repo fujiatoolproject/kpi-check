@@ -1,0 +1,51 @@
+body{
+	background-image: url(https://images.pexels.com/photos/583846/pexels-photo-583846.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+}
+
+.title{
+	width: 50%;
+	text-align: center;
+	background-color: #ffffff;
+	opacity: 0.8;
+	margin-left: auto;
+	margin-right: auto;
+	padding-bottom: 2px;
+	padding-top: 2px;
+	font-family: meiryo;
+}
+
+
+.center-table{
+	margin-left: auto;
+	margin-right: auto;
+	background-color: white;
+}
+
+form {
+	padding-top: 0px;
+}
+
+
+.hasil {
+	width: 80px;
+}
+
+select {
+	width: 200px;	
+}
+
+.tanggal {
+	margin: auto;
+}
+
+.chui{
+	float: left;
+	background-color: white;
+	padding: 10px;
+	position: absolute;
+	opacity: 0.8;
+}
+
+.chui p:hover{
+	color: red;
+}

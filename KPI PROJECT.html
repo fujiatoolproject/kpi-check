@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>KPI Project</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	
+</head>
+<body>
+	<div class="title">
+			<h1>KPIチェック電卓</h1>
+			<h3>by Jeremy Ivander</h3>
+			<h4>V.1</h4>
+	</div>
+
+	<hr>
+	<div class="chui">
+		<p>毎月3回作業</p>
+		<p>1~10日までの分は11~15日に作業</p>
+		
+		<p>11~20日までの分は21~25日に作業</p>
+		
+		<p>21~月末までの分は11翌月1~5日に作業</p>		
+	</div>
+
+
+
+	<div class="calculator">
+		<form>
+			<table border="1" class="center-table">
+				<tr>
+					<td>
+						<label for="text" class="team">TEAM</label>
+					</td>
+					<td>
+						<select>
+							<option>ルナ</option>
+							<option>メティス</option>
+							<option>フロラ</option>
+							<option>アルテミス</option>
+							<option>オリシャ</option>
+							<option>タラッサ</option>
+							<option>フィービー</option>
+							<option>ディオネ</option>
+							<option>イリス</option>
+							<option>エルピス</option>
+							<option>ハルモニア</option>
+							<option>レイア</option>
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<td>限目分秒</td>
+					<td>
+						<input type="date" class="tanggal"name=""> ~ <input type="date" class="tanggal"name="">
+					</td>
+				</tr>
+				<tr>
+					<td>チーム運営</td>
+					<td>
+						<input class="menit" type="number"  index="0" onkeyup="UpdateTotal(this)">時
+						<input class="detik" type="number" index="0" onkeyup="UpdateTotal(this)">分
+					</td>
+					<td  class="hasil" name="total[]"></td>
+				</tr>
+				<tr>
+					<td>プランナー業務</td>
+					<td>
+						<input class="menit" type="number"index="1" onkeyup="UpdateTotal(this)">時
+						<input class="detik" type="number" index="1" onkeyup="UpdateTotal(this)">分
+					</td>
+					<td name="total[]"></td>
+				</tr>
+				<tr>
+					<td>アドバイザー業務</td>
+					<td>
+						<input class="menit" type="number" index="2" onkeyup="UpdateTotal(this)">時
+						<input class="detik" type="number" index="2" onkeyup="UpdateTotal(this)">分
+					</td>
+					<td name="total[]"></td>
+				</tr>
+				<tr>
+					<td>チームMTG</td>
+					<td>
+						<input class="menit" type="number" index="3" onkeyup="UpdateTotal(this)">時
+						<input class="detik" type="number" index="3" onkeyup="UpdateTotal(this)">分
+					</td>
+					<td name="total[]"></td>
+				</tr>
+				<tr>
+					<td>チームフォロー業務※PT設定時のみ</td>
+					<td>
+						<input class="menit" type="number" index="4" onkeyup="UpdateTotal(this)">時
+						<input class="detik" type="number"  index="4" onkeyup="UpdateTotal(this)">分
+					</td>
+					<td name="total[]"></td>
+				</tr>
+				<tr>
+					<td>担当者検査相談</td>
+					<td>
+						<input class="menit" type="number" index="5" onkeyup="UpdateTotal(this)">時
+						<input class="detik" type="number"  index="5" onkeyup="UpdateTotal(this)">分
+					</td>
+					<td name="total[]"></td>
+				</tr>
+				<tr>
+					<td>ツール設定（ユーザーのものは除く</td>
+					<td>
+						<input class="menit" type="number" index="6" onkeyup="UpdateTotal(this)">時
+						<input class="detik" type="number"  index="6" onkeyup="UpdateTotal(this)">分
+					</td>
+					<td name="total[]"></td>
+				</tr>
+				<tr>
+					<td>管理部への依頼</td>
+					<td>
+						<input class="menit" type="number" index="7" onkeyup="UpdateTotal(this)">時
+						<input class="detik" type="number"  index="7" onkeyup="UpdateTotal(this)">分
+					</td>
+					<td name="total[]"></td>
+				</tr>
+				<tr>
+					<td>タイムカードに関する伝達</td>
+					<td>
+						<input class="menit" type="number" index="8" onkeyup="UpdateTotal(this)">時
+						<input class="detik" type="number"  index="8" onkeyup="UpdateTotal(this)">分
+					</td>
+					<td name="total[]"></td>
+				</tr>
+			</table>
+		</form>
+		<br>
+				
+	</div>
+	<script src="kpi.js"></script>
+</body>
+</html>
